@@ -13,6 +13,7 @@ export default class UserComponent extends Component {
     componentDidMount() {
         UserService.getUsers().then((response) => {
             this.setState({ users: response.data })
+            console.log("Thisaqra")
         });
     }
 
